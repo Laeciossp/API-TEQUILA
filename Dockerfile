@@ -22,6 +22,5 @@ COPY ./app .
 # a variável de ambiente 'PORT' que o Cloud Run fornece (que será 8080).
 # Garantimos que ele escute em '0.0.0.0' para que seja acessível
 # de fora do contêiner.
-CMD uvicorn main:app --host 0.0.0.0 --port ${PORT}
-
+CMD uvicorn app.main:app --host 0.0.0.0 --port ${PORT}
 
