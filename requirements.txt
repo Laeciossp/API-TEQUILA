@@ -1,13 +1,14 @@
 # Core da Aplicação FastAPI
-fastapi==0.111.0  # Versão recente da FastAPI.
+fastapi==0.111.0
 
 # Servidor ASGI para rodar a aplicação
-uvicorn==0.30.1   # Versão recente do Uvicorn.
+uvicorn==0.30.1
 
 # Cliente HTTP, útil se sua API faz requisições externas
-httpx==0.27.0     # Versão recente do HTTPX.
+httpx==0.27.0
 
 # Gerenciamento de variáveis de ambiente (para desenvolvimento local)
+# Necessário se você usa 'dotenv.load_dotenv()' ou similar.
 python-dotenv==1.0.0
 
 # O Pydantic é a base do FastAPI para validação de dados
