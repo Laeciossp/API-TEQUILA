@@ -1,0 +1,19 @@
+# Core da Aplicação FastAPI
+fastapi==0.111.0  # Versão recente da FastAPI.
+
+# Servidor ASGI para rodar a aplicação
+uvicorn==0.30.1   # Versão recente do Uvicorn.
+
+# Cliente HTTP, útil se sua API faz requisições externas
+httpx==0.27.0     # Versão recente do HTTPX.
+
+# Gerenciamento de variáveis de ambiente (para desenvolvimento local)
+python-dotenv==1.0.0
+
+# O Pydantic é a base do FastAPI para validação de dados
+# Use uma versão 2.x, pois o BaseSettings foi movido a partir dela
+pydantic==2.8.2
+
+# Essencial para o BaseSettings no Pydantic v2+
+# Foi o motivo do erro anterior.
+pydantic-settings==2.3.4
